@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./gradient-abstract-doodle.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    /* color:  rgb(245, 37, 141); */
+  }
+  
+  .game-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: white;
+    /* padding: 20px; */
+    border-radius: 11px;
+    box-shadow: 1px 1px 8px 10px rgba(172, 179, 241, 0.705);
+  }
+  .between {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+  }
+  
+  h1 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
+  #start-btn {
+    margin: 20px;
+    border-radius: 30px;
+    background-color: rgb(13, 194, 73);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .top {
+    background-image: url(./horizental.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .box-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 128px;
+    height: 128px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #red { background-color: rgb(241, 35, 104); }
+  #blue { background-color: rgb(37, 37, 245); }
+  #green { background-color: rgb(111, 1, 175); }
+  #yellow { background-color: rgb(255, 166, 0); }
+  
+  
+  .box.active {
+    opacity: 0.7;
+  }
