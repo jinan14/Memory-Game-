@@ -43,8 +43,8 @@ function showSequence(randomColor) {
         setTimeout(() => {
             //For each color, it sets a timeout to call lightUp(color) after a delay
             lightUp(randomColor);
-        },800);//800 milliseconds 
-        //the first color will light up immediately, the second after 800 ms, the third after 1600 ms, and so on.
+        },500);//800 milliseconds 
+        //the first color will light up
 
     // Allow user input after the sequence is shown
     //it sets another timeout to call enableUserInput()
@@ -126,7 +126,7 @@ function handleUserClick(event) {
         userScore++;
         document.getElementById('user-info').textContent = `Player: ${userName} | Score: ${userScore}`;
         disableUserInput();
-        setTimeout(startLevel, 1000); // Move to the next level after a short delay
+        setTimeout(startLevel, 800); // Move to the next level after a short delay
     }
 }
 
